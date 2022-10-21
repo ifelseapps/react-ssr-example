@@ -4,13 +4,18 @@ import { renderToString } from 'react-dom/server';
 import { App } from './App';
 import { getHtml } from './server/getHtml';
 import { getAssets } from './server/getAssets';
+import { StaticRouter } from 'react-router-dom/server';
 
 const app = express();
 
 app.use(express.static('dist'));
 
 app.use('/*', (req, res) => {
-  const jsx = <App/>;
+  const jsx = (
+    <StaticRouter location={req.originalUrl}>
+      <App/>
+    </StaticRouter>
+  );
   const html = getHtml(renderToString(jsx), getAssets());
   res.status(200).send(html);
 });
