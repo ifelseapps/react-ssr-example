@@ -5,12 +5,12 @@ module.exports = () => ({
   entry: './src/index@client.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'client[hash].bundle.js',
+    filename: 'client.bundle.js',
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.css'],
   },
-  plugins: [new MiniCssExtractPlugin({ filename: 'styles[hash].bundle.css' })],
+  plugins: [new MiniCssExtractPlugin({ filename: 'styles.css' })],
   module: {
     rules: [
       {

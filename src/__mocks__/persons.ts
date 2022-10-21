@@ -4,6 +4,7 @@ export const PERSONS_MOCK: Person[] = [
   {
     name: 'Владислав',
     surname: 'Поляков',
+    job: 'Генеральный директор',
     email: 'vlad@pyatnica.tv',
     phone: '+7 (903) 123-45-65',
     pic: 'https://www.kinopoisk.ru/images/sm_actor/1193331.jpg'
@@ -11,6 +12,7 @@ export const PERSONS_MOCK: Person[] = [
   {
     name: 'Андрей',
     surname: 'Симонов',
+    job: 'Учредитель',
     email: 'simonov@pyatnica.tv',
     phone: '+7 (910) 143-45-65',
     pic: 'https://www.kinopoisk.ru/images/sm_actor/565974.jpg'
@@ -18,6 +20,7 @@ export const PERSONS_MOCK: Person[] = [
   {
     name: 'Игорь',
     surname: 'Жмых',
+    job: 'Режиссер',
     email: 'jmyh@pyatnica.tv',
     phone: '+7 (911) 689-35-23',
     pic: 'https://www.kinopoisk.ru/images/sm_actor/1324756.jpg'
@@ -25,6 +28,7 @@ export const PERSONS_MOCK: Person[] = [
   {
     name: 'Валерий',
     surname: 'Киселев',
+    job: 'Сценарист',
     email: 'kokos@pyatnica.tv',
     phone: '+7 (923) 222-55-55',
     pic: 'https://www.kinopoisk.ru/images/sm_actor/1556984.jpg'
@@ -32,6 +36,7 @@ export const PERSONS_MOCK: Person[] = [
   {
     name: 'Мария',
     surname: 'Мельникова',
+    job: 'Секретарь',
     email: 'm.melnikova@pyatnica.tv',
     phone: '+7 (903) 456-53-88',
     pic: 'https://www.kinopoisk.ru/images/sm_actor/3676537.jpg'
@@ -39,6 +44,7 @@ export const PERSONS_MOCK: Person[] = [
   {
     name: 'Василий',
     surname: 'Куренной',
+    job: 'Оператор',
     email: 'kurenok@pyatnica.tv',
     phone: '+7 (905) 769-23-11',
     pic: 'https://www.kinopoisk.ru/images/sm_actor/1634100.jpg'
@@ -46,5 +52,5 @@ export const PERSONS_MOCK: Person[] = [
 ];
 
 export const getPersons = () => new Promise<Person[]>((resolve) => {
-  setTimeout(() => resolve(PERSONS_MOCK), 2000);
+  setTimeout(() => resolve(PERSONS_MOCK), 100);
 });

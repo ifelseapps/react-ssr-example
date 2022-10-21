@@ -1,0 +1,11 @@
+.Layout-Title {
+  margin: 0;
+  padding: 1em 0 0.4em 0;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #424242;
+  text-shadow: 1px 1px 1px #212121;
+}

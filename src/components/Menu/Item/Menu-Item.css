@@ -1,0 +1,8 @@
+.Menu-Item {
+  padding: 0.4em;
+}
+
+.Menu-Item .Menu-Link {
+  color: inherit;
+  text-decoration: none;
+}
