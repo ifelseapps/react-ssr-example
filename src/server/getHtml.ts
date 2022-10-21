@@ -1,6 +1,6 @@
 import { Assets } from './getAssets';
 
-export const getHtml = (appHtml: string, assets: Assets) => `
+export const getHtml = (appHtml: string, assets: Assets, serializedStore: string) => `
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -10,6 +10,9 @@ export const getHtml = (appHtml: string, assets: Assets) => `
 </head>
 <body>
   <div id="app">${appHtml}</div>
+  <script>
+    window.__STORE_INITIAL_DATA__ = ${serializedStore};
+  </script>
   ${assets.js ? `<script src="${assets.js}"></script>` : null}
 </body>
 </html>
